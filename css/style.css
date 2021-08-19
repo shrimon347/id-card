@@ -1,0 +1,294 @@
+/* =====================google fonts================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* =====================variable css================= */
+
+:root {
+    --header-height: 3rem;
+    /* =============colors============== */
+    /* =============change favorite color========== */
+    --hue-color: 19;
+    /* HSL color mode */
+    --first-color: hsl(var(--hue-color), 100%, 50%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-alt: hsl(var(--hue-color), 95%, 63%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --container-color: #FFF;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    /* =============FONT AND typography============== */
+    --body-font: 'Poppins', sans-serif;
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px.... */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    /* ========font weight================ */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    /* ============Margenes Bottom================== */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .74rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+    /* =============z index============ */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+
+/* ===================base====================== */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#section {
+    width: 600px;
+    margin: auto;
+}
+
+
+/* ===============logo================== */
+
+.container {
+    margin-top: 20px;
+    /* border: 1px solid black; */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    background-color: #FFF;
+}
+
+.title {
+    display: flex;
+    margin-left: 5%;
+}
+
+.logo img {
+    width: 120px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.clg_name {
+    margin-top: var(--mb-1);
+}
+
+.clg_name h1 {
+    font-size: 25px;
+    color: #C02030;
+}
+
+h3 {
+    font-size: 16.8px;
+    font-weight: 400;
+}
+
+.line {
+    margin-top: var(--mb-0-25);
+    width: 100%;
+    height: 3px;
+    background-color: #32306B;
+}
+
+.info {
+    display: flex;
+}
+
+.profile_img img {
+    width: 150px;
+    height: 160px;
+    border: 2.8px solid #C02030;
+    margin-left: 10px;
+    margin-top: -8px;
+}
+
+.profile_info {
+    margin-left: 5%;
+    margin-top: -10px;
+}
+
+.profile_info h3 {
+    font-weight: 500;
+}
+
+.space1 {
+    margin-left: 56px;
+}
+
+.space2 {
+    margin-left: 51px;
+}
+
+.space3 {
+    margin-left: 10px;
+}
+
+.blood {
+    color: #C02030;
+}
+
+.line_s {
+    width: 160px;
+    background-color: #C02030;
+    height: 2px;
+}
+
+.signature {
+    margin-top: 19.5%;
+    margin-left: 10px;
+}
+
+.sig {
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #313131;
+}
+
+.header img {
+    width: 100%;
+    height: 50px;
+}
+
+
+/* ===================back part================== */
+
+.container2 {
+    margin-top: 10%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    background-color: #FFF;
+    position: relative;
+}
+
+.container2::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(../img/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+}
+
+.header2 {
+    width: 100%;
+    height: 15px;
+    background-color: #C02030;
+}
+
+.address_content {
+    display: flex;
+}
+
+.address_info {
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.address_info .break {
+    margin-left: 80px;
+}
+
+.space4 {
+    margin-left: 16px;
+}
+
+.space5 {
+    margin-left: 22px;
+}
+
+.qr_code img {
+    width: 50%;
+    margin-left: 75%;
+    margin-top: 2%;
+}
+
+.found_line {
+    width: 70%;
+    margin: auto;
+    height: 3px;
+    background-color: #32306B;
+}
+
+.found_content {
+    /* margin-left: 10%; */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.found_content h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.signature2 {
+    margin-left: 69%;
+    margin-top: -10%;
+}
+
+.line_s2 {
+    width: 110px;
+    background-color: #C02030;
+    height: 2px;
+    margin: auto;
+}
+
+.sig2 {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.footer2 {
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    background-color: #313131;
+}
